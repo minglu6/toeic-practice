@@ -1,0 +1,51 @@
+{
+  "title": "Part 1 · Photographs",
+  "sets": [
+    {
+      "id": "p1-1",
+      "image": "images/part1/photo1.svg",
+      "audio": "audio/part1/set1.mp3",
+      "answer": "B",
+      "choices": {
+        "A": "A woman is watering plants in a garden.",
+        "B": "A man is giving a presentation to a small group.",
+        "C": "Workers are loading boxes onto a truck.",
+        "D": "Customers are waiting in line at a café."
+      },
+      "transcript": {
+        "A": "A woman is watering plants in a garden.",
+        "B": "A man is giving a presentation to a small group.",
+        "C": "Workers are loading boxes onto a truck.",
+        "D": "Customers are waiting in line at a café."
+      },
+      "zh": {
+        "passage": "图片：会议室里，一名男子站在投影屏幕旁，对面有三位同事坐着听讲。",
+        "ans": "B",
+        "rationale": "画面是室内简报场景，男子面向小组讲解。A 花园浇水、C 装货、D 咖啡馆排队均不符。"
+      }
+    },
+    {
+      "id": "p1-2",
+      "image": "images/part1/photo2.svg",
+      "audio": "audio/part1/set2.mp3",
+      "answer": "C",
+      "choices": {
+        "A": "A chef is tasting soup in a kitchen.",
+        "B": "A clerk is scanning items at a register.",
+        "C": "A woman is looking at a map on a wall.",
+        "D": "Two people are shaking hands in a lobby."
+      },
+      "transcript": {
+        "A": "A chef is tasting soup in a kitchen.",
+        "B": "A clerk is scanning items at a register.",
+        "C": "A woman is looking at a map on a wall.",
+        "D": "Two people are shaking hands in a lobby."
+      },
+      "zh": {
+        "passage": "图片：走廊里一位女士站在墙面地图前，手指点着某个位置。",
+        "ans": "C",
+        "rationale": "人物在看墙上的地图。A 厨房、B 收银台、D 握手大厅均未出现。"
+      }
+    }
+  ]
+}

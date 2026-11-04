@@ -1,0 +1,162 @@
+{
+  "title": "语法速练 · Part 5 风格",
+  "sets": [
+    {
+      "id": "g1",
+      "questions": [
+        {
+          "q": "G1",
+          "stem": "The report must be submitted ----- Friday at the latest.",
+          "answer": "B",
+          "choices": {
+            "A": "in",
+            "B": "by",
+            "C": "on",
+            "D": "at"
+          },
+          "zh_stem": "报告最迟必须在周五前提交。",
+          "zh_opts": {
+            "A": "在…里",
+            "B": "不迟于",
+            "C": "在（某日）",
+            "D": "在（时刻）"
+          },
+          "rationale": "by + 时间点 = 不迟于；强调截止用 by Friday。"
+        },
+        {
+          "q": "G2",
+          "stem": "If the shipment ----- tomorrow, please notify procurement.",
+          "answer": "A",
+          "choices": {
+            "A": "arrives",
+            "B": "arrive",
+            "C": "arrived",
+            "D": "arriving"
+          },
+          "zh_stem": "如果货物明天到达，请通知采购。",
+          "zh_opts": {
+            "A": "到达（三单）",
+            "B": "到达",
+            "C": "到达了",
+            "D": "正在到达"
+          },
+          "rationale": "真实条件 if + 一般现在，主语 shipment 单数 → arrives。"
+        },
+        {
+          "q": "G3",
+          "stem": "Customers complained about the ----- of the packaging.",
+          "answer": "C",
+          "choices": {
+            "A": "fragile",
+            "B": "fragily",
+            "C": "fragility",
+            "D": "fragment"
+          },
+          "zh_stem": "客户抱怨包装的 ----- 。",
+          "zh_opts": {
+            "A": "易碎的",
+            "B": "易碎地",
+            "C": "易碎性",
+            "D": "碎片"
+          },
+          "rationale": "the + 名词 → fragility。"
+        },
+        {
+          "q": "G4",
+          "stem": "Ms. Chen is the person ----- suggestions were adopted.",
+          "answer": "D",
+          "choices": {
+            "A": "who",
+            "B": "which",
+            "C": "whom",
+            "D": "whose"
+          },
+          "zh_stem": "陈女士是建议被采纳的那个人。",
+          "zh_opts": {
+            "A": "谁",
+            "B": "哪一个",
+            "C": "谁（宾）",
+            "D": "谁的"
+          },
+          "rationale": "whose 修饰 suggestions。"
+        },
+        {
+          "q": "G5",
+          "stem": "The more carefully you proofread, ----- mistakes you will miss.",
+          "answer": "A",
+          "choices": {
+            "A": "the fewer",
+            "B": "fewer",
+            "C": "the less",
+            "D": "least"
+          },
+          "zh_stem": "你校对越仔细，漏掉的错误就越少。",
+          "zh_opts": {
+            "A": "越少（可数）",
+            "B": "更少",
+            "C": "越少（不可数）",
+            "D": "最少"
+          },
+          "rationale": "the more … the fewer …；mistakes 可数用 fewer。"
+        },
+        {
+          "q": "G6",
+          "stem": "Please keep the door ----- while the alarm is being tested.",
+          "answer": "B",
+          "choices": {
+            "A": "close",
+            "B": "closed",
+            "C": "closely",
+            "D": "closing"
+          },
+          "zh_stem": "测试警报时请保持门 ----- 。",
+          "zh_opts": {
+            "A": "关闭（动词）",
+            "B": "关闭的",
+            "C": "紧密地",
+            "D": "正在关闭"
+          },
+          "rationale": "keep + 宾语 + 形容词补语 → closed。"
+        },
+        {
+          "q": "G7",
+          "stem": "Not only the CEO but also the directors ----- present.",
+          "answer": "C",
+          "choices": {
+            "A": "is",
+            "B": "was",
+            "C": "were",
+            "D": "been"
+          },
+          "zh_stem": "不仅 CEO，董事们也在场。",
+          "zh_opts": {
+            "A": "是（单）",
+            "B": "是（过去单）",
+            "C": "是（过复）",
+            "D": "已经被"
+          },
+          "rationale": "not only A but also B 谓语与 B 一致，directors 复数 → were。"
+        },
+        {
+          "q": "G8",
+          "stem": "We look forward to ----- from you next week.",
+          "answer": "A",
+          "choices": {
+            "A": "hearing",
+            "B": "hear",
+            "C": "heard",
+            "D": "hears"
+          },
+          "zh_stem": "我们期待下周收到你的回复。",
+          "zh_opts": {
+            "A": "听到（动名词）",
+            "B": "听",
+            "C": "听过",
+            "D": "听（三单）"
+          },
+          "rationale": "look forward to + V-ing。"
+        }
+      ]
+    }
+  ]
+}

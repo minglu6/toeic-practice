@@ -1,0 +1,84 @@
+{
+  "title": "Part 3 · Conversations",
+  "sets": [
+    {
+      "id": "p3-1",
+      "audio": "audio/part3/set1.mp3",
+      "speakers": [
+        "M",
+        "W"
+      ],
+      "transcript_en": [
+        "M: Hi, Maria. Do you still have the draft of the quarterly sales report? I need to send it to the regional manager by four.",
+        "W: I finished revising it this morning. It's saved in the shared folder under Finance. Just make sure you use the version labeled Final.",
+        "M: Got it. Should I also attach the expense summary from last month?",
+        "W: No, he only asked for the sales figures. The expense summary can wait until Friday's meeting."
+      ],
+      "transcript_zh": [
+        "男：Maria，季度销售报告草稿还在吗？我四点前要发给区域经理。",
+        "女：今早改完了，在财务共享文件夹里，请用标成 Final 的版本。",
+        "男：明白。要不要顺便附上上个月的费用汇总？",
+        "女：不用，他只要销售数据。费用汇总等到周五会议再说。"
+      ],
+      "questions": [
+        {
+          "q": "1",
+          "stem": "What does the man need to send by four?",
+          "answer": "B",
+          "choices": {
+            "A": "An agenda for Friday's meeting",
+            "B": "The quarterly sales report",
+            "C": "Last month's expense summary",
+            "D": "A revised budget proposal"
+          },
+          "zh_stem": "男子四点前要发送什么？",
+          "zh_opts": {
+            "A": "周五会议议程",
+            "B": "季度销售报告",
+            "C": "上月费用汇总",
+            "D": "修订后的预算方案"
+          },
+          "rationale": "开场即说 quarterly sales report，四点前发给区域经理。"
+        },
+        {
+          "q": "2",
+          "stem": "Where is the document saved?",
+          "answer": "C",
+          "choices": {
+            "A": "On the man's desktop",
+            "B": "In an e-mail attachment",
+            "C": "In the shared folder under Finance",
+            "D": "On a USB drive at reception"
+          },
+          "zh_stem": "文件保存在哪里？",
+          "zh_opts": {
+            "A": "男子电脑桌面",
+            "B": "电子邮件附件里",
+            "C": "财务共享文件夹",
+            "D": "前台的 U 盘"
+          },
+          "rationale": "女：saved in the shared folder under Finance。"
+        },
+        {
+          "q": "3",
+          "stem": "What will the man probably do on Friday?",
+          "answer": "B",
+          "choices": {
+            "A": "Print new shipping labels",
+            "B": "Discuss the expense summary at a meeting",
+            "C": "Interview a regional manager",
+            "D": "Rewrite the sales report from scratch"
+          },
+          "zh_stem": "男子周五可能会做什么？",
+          "zh_opts": {
+            "A": "打印新货运标签",
+            "B": "在会议上讨论费用汇总",
+            "C": "面试区域经理",
+            "D": "从头重写销售报告"
+          },
+          "rationale": "费用汇总等到 Friday's meeting 再处理。"
+        }
+      ]
+    }
+  ]
+}

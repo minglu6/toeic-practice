@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>错题本 · 托业考试练习</title>
+<link rel="stylesheet" href="../css/app.css" />
+</head>
+<body class="app">
+<div class="app-shell">
+  <a class="nav-home" href="../index.html">← 托业考试练习</a>
+  <header class="brand"><h1>错题本</h1><p>本机自动收集答错的题目</p></header>
+  <div class="btn-row"><button class="btn" id="clear">清空错题本</button></div>
+  <div id="list"></div>
+</div>
+<script src="../js/config.js"></script>
+<script src="../js/storage.js"></script>
+<script>
+(function () {
+  function render() {
+    var wrong = ToeicStore.get().wrong || [];
+    var el = document.getElementById('list');
+    if (!wrong.length) {
+      el.innerHTML = '<p class="note">暂无错题。去做各模块练习后，答错会自动记入。</p>';
+      return;
+    }
+    el.innerHTML = wrong.map(function (w) {
+      return '<div class="card" style="margin-bottom:8px">' +
+        '<div class="t">' + (w.module || '') + ' · Q' + (w.q || '') + '</div>' +
+        '<div class="d">' + (w.stem || '') + '</div>' +
+        '<div class="meta">你的选项：' + (w.picked || '未选') + ' · 正确答案：' + (w.ans || '') +
+        ' <button class="btn" data-id="' + w.id + '" style="margin-left:8px;padding:4px 8px">移除</button></div></div>';
+    }).join('');
+    el.querySelectorAll('button[data-id]').forEach(function (btn) {
+      btn.onclick = function () { ToeicStore.clearWrong(btn.getAttribute('data-id')); render(); };
+    });
+  }
+  document.getElementById('clear').onclick = function () {
+    var d = ToeicStore.get(); d.wrong = []; localStorage.setItem((TOEIC && TOEIC.STORAGE_KEY) || 'toeic-practice-v1', JSON.stringify(d));
+    render();
+  };
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Part 6 · 托业考试练习</title>
+<link rel="stylesheet" href="../css/exam.css" />
+</head>
+<body class="exam">
+<div class="sheet">
+  <div class="header">
+    <div class="part">Reading · Part 6</div>
+    <div class="meta">Text Completion</div>
+  </div>
+  <p class="dir" id="dir"></p>
+  <div id="passage"></div>
+  <div id="qs"></div>
+  <div class="actions">
+    <button type="button" class="btn primary" id="check">核对答案</button>
+    <button type="button" class="btn" id="reset">重做</button>
+  </div>
+  <p class="score" id="score"></p>
+  <div class="explain" id="explain"></div>
+</div>
+<script src="../js/config.js"></script>
+<script src="../js/storage.js"></script>
+<script src="../js/quiz.js"></script>
+<script>
+(function () {
+  var BASE = (window.TOEIC && TOEIC.BASE) || '../';
+  var picks = {}, set, qsEl = document.getElementById('qs');
+  fetch(BASE + 'data/part6.json').then(function (r) { return r.json(); }).then(function (d) {
+    set = d.sets[0];
+    document.getElementById('dir').textContent = set.dir;
+    document.getElementById('passage').innerHTML = set.passage_html;
+    qsEl.innerHTML = set.questions.map(function (qq) {
+      return '<div class="q" data-q="' + qq.q + '" data-ans="' + qq.answer + '">' +
+        '<div class="stem">' + qq.q + '. Select the best answer.</div>' +
+        ToeicQuiz.renderOptions(qq.choices) + '</div>';
+    }).join('');
+    ToeicQuiz.bindOptions(qsEl, picks);
+  });
+  document.getElementById('check').onclick = function () {
+    var r = ToeicQuiz.grade(qsEl, picks, 'part6');
+    document.getElementById('score').textContent = '得分：' + r.right + ' / ' + r.total;
+    var html = '<h2>全文译文</h2><div class="zh"><p>' + ToeicQuiz.escapeHtml(set.zh_passage).replace(/\n/g, '</p><p>') + '</p></div><h2>答案与解析</h2>';
+    set.questions.forEach(function (qq) {
+      html += '<div class="item"><div class="ans">' + qq.q + ' · ' + qq.answer + '</div>';
+      html += '<div class="opts-zh">';
+      Object.keys(qq.zh_opts).forEach(function (k) {
+        html += '(' + k + ') ' + ToeicQuiz.escapeHtml(qq.zh_opts[k]) + '<br>';
+      });
+      html += '</div><p>' + ToeicQuiz.escapeHtml(qq.rationale) + '</p></div>';
+    });
+    var box = document.getElementById('explain');
+    box.innerHTML = html;
+    box.className = 'explain show';
+    ToeicStore.setProgress('part6', r);
+  };
+  document.getElementById('reset').onclick = function () {
+    ToeicQuiz.reset(qsEl, picks);
+    document.getElementById('score').textContent = '';
+    document.getElementById('explain').className = 'explain';
+  };
+})();
+</script>
+</body>
+</html>

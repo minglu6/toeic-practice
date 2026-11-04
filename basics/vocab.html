@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>词汇 · 托业考试练习</title>
+<link rel="stylesheet" href="../css/app.css" />
+<link rel="stylesheet" href="../css/exam.css" />
+</head>
+<body class="app">
+<div class="app-shell">
+  <a class="nav-home" href="../index.html">← 托业考试练习</a>
+  <header class="brand"><h1>词汇卡片</h1><p>职场高频词 · 音标 · 中文 · 例句</p></header>
+  <p class="progress-bar" id="stat"></p>
+  <div id="card" class="vocab-card"></div>
+  <div class="btn-row">
+    <button class="btn" id="prev">上一个</button>
+    <button class="btn primary" id="know">认识</button>
+    <button class="btn" id="again">再练</button>
+    <button class="btn" id="next">下一个</button>
+  </div>
+  <div class="btn-row">
+    <button class="btn" id="shuffle">打乱</button>
+    <button class="btn" id="onlyUnknown">只看未掌握</button>
+  </div>
+</div>
+<script src="../js/config.js"></script>
+<script src="../js/storage.js"></script>
+<script>
+(function () {
+  var BASE = (window.TOEIC && TOEIC.BASE) || '../';
+  var words = [], idx = 0, filterUnknown = false;
+  function list() {
+    if (!filterUnknown) return words;
+    var done = ToeicStore.get().vocabDone || {};
+    return words.filter(function (w) { return !done[w.word]; });
+  }
+  function render() {
+    var L = list();
+    if (!L.length) {
+      document.getElementById('card').innerHTML = '<div class="zh">当前筛选下没有词了。</div>';
+      return;
+    }
+    if (idx >= L.length) idx = 0;
+    if (idx < 0) idx = L.length - 1;
+    var w = L[idx];
+    document.getElementById('card').innerHTML =
+      '<div class="word">' + w.word + '</div>' +
+      '<div class="ipa">' + w.ipa + '</div>' +
+      '<div class="zh">' + w.zh + '</div>' +
+      '<div class="ex">' + w.example + '</div>';
+    var done = Object.keys(ToeicStore.get().vocabDone || {}).filter(function (k) { return ToeicStore.get().vocabDone[k]; }).length;
+    document.getElementById('stat').textContent = (idx + 1) + ' / ' + L.length + ' · 已标认识 ' + done + ' / ' + words.length;
+  }
+  fetch(BASE + 'data/vocab.json').then(function (r) { return r.json(); }).then(function (d) {
+    words = d.words; render();
+  });
+  document.getElementById('prev').onclick = function () { idx--; render(); };
+  document.getElementById('next').onclick = function () { idx++; render(); };
+  document.getElementById('know').onclick = function () {
+    var L = list(); if (!L.length) return;
+    ToeicStore.markVocab(L[idx].word, true);
+    idx++; render();
+  };
+  document.getElementById('again').onclick = function () {
+    var L = list(); if (!L.length) return;
+    ToeicStore.markVocab(L[idx].word, false);
+    render();
+  };
+  document.getElementById('shuffle').onclick = function () {
+    for (var i = words.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = words[i]; words[i] = words[j]; words[j] = t;
+    }
+    idx = 0; render();
+  };
+  document.getElementById('onlyUnknown').onclick = function () {
+    filterUnknown = !filterUnknown;
+    this.textContent = filterUnknown ? '显示全部' : '只看未掌握';
+    idx = 0; render();
+  };
+})();
+</script>
+</body>
+</html>

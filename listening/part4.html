@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Part 4 · 托业考试练习</title>
+<link rel="stylesheet" href="../css/exam.css" />
+</head>
+<body class="exam">
+<div class="sheet">
+  <div class="header">
+    <div class="part">Listening · Part 4</div>
+    <div class="meta">Talks · 三题全部作答后再看原文</div>
+  </div>
+  <p class="set-nav" id="setNav"></p>
+  <div class="audio-bar"><div>播放独白</div><audio id="audio" controls preload="metadata"></audio></div>
+  <div id="qs"></div>
+  <div class="actions">
+    <button type="button" class="btn primary" id="check">核对答案</button>
+    <button type="button" class="btn" id="prev">上一组</button>
+    <button type="button" class="btn" id="next">下一组</button>
+  </div>
+  <p class="score" id="score"></p>
+  <div class="explain" id="explain"></div>
+</div>
+<script src="../js/config.js"></script>
+<script src="../js/storage.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/listening.js"></script>
+<script>
+(function () {
+  var data, idx = 0, picks = {};
+  var qsEl = document.getElementById('qs');
+  function render() {
+    picks = {};
+    var set = data.sets[idx];
+    document.getElementById('setNav').textContent = '独白 ' + (idx + 1) + ' / ' + data.sets.length;
+    document.getElementById('audio').src = ToeicListening.abs(set.audio);
+    qsEl.innerHTML = set.questions.map(function (qq) {
+      return '<div class="q" data-q="' + qq.q + '" data-ans="' + qq.answer + '">' +
+        '<div class="stem">' + qq.q + '. ' + ToeicQuiz.escapeHtml(qq.stem) + '</div>' +
+        ToeicQuiz.renderOptions(qq.choices) + '</div>';
+    }).join('');
+    document.getElementById('score').textContent = '';
+    document.getElementById('explain').className = 'explain';
+    document.getElementById('explain').innerHTML = '';
+    ToeicQuiz.bindOptions(qsEl, picks);
+  }
+  ToeicListening.load('part4').then(function (d) { data = d; render(); });
+  document.getElementById('check').onclick = function () {
+    var r = ToeicQuiz.grade(qsEl, picks, 'part4');
+    document.getElementById('score').textContent = '得分：' + r.right + ' / ' + r.total;
+    var box = document.getElementById('explain');
+    box.innerHTML = ToeicListening.explainListening(data.sets[idx], 'part4');
+    box.className = 'explain show';
+    ToeicStore.setProgress('part4', { set: data.sets[idx].id, right: r.right, total: r.total });
+  };
+  document.getElementById('prev').onclick = function () { if (idx > 0) { idx--; render(); } };
+  document.getElementById('next').onclick = function () { if (idx < data.sets.length - 1) { idx++; render(); } };
+})();
+</script>
+</body>
+</html>

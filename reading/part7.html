@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#ffffff" />
+<title>Part 7 · 托业考试练习</title>
+<link rel="stylesheet" href="../css/exam.css" />
+</head>
+<body class="exam">
+<div class="sheet">
+  <div class="header">
+    <div class="part">Reading Test · Part 7</div>
+    <div class="meta" id="meta"></div>
+  </div>
+  <div class="timer-bar" id="timerBar" data-rec-sec="180">
+    <span>用时 <span class="clock" id="timerClock">00:00</span></span>
+    <span class="rec" id="recLabel">3:00</span>
+    <span class="status" id="timerStatus">计时中</span>
+    <button type="button" class="btn-timer" id="timerPause">暂停</button>
+  </div>
+  <p class="dir" id="dir"></p>
+  <div id="passage"></div>
+  <div id="qs"></div>
+  <div class="actions">
+    <button type="button" class="btn primary" id="check">核对答案</button>
+    <button type="button" class="btn" id="reset">重做</button>
+    <button type="button" class="btn" id="toggleExplain">中文解析</button>
+  </div>
+  <p class="score" id="score"></p>
+  <div class="explain" id="explain"></div>
+</div>
+<script src="../js/config.js"></script>
+<script src="../js/storage.js"></script>
+<script src="../js/quiz.js"></script>
+<script>
+(function () {
+  var BASE = (window.TOEIC && TOEIC.BASE) || '../';
+  var params = new URLSearchParams(location.search);
+  var type = params.get('type') || 'single';
+  if (['single','double','triple'].indexOf(type) < 0) type = 'single';
+  var picks = {}, set, qsEl = document.getElementById('qs'), timer;
+
+  function buildExplain() {
+    var html = '<h2>全文译文</h2><div class="zh"><p>' +
+      ToeicQuiz.escapeHtml(set.zh_passage).replace(/\n/g, '</p><p>') + '</p></div><h2>答案与解析</h2>';
+    set.questions.forEach(function (qq) {
+      html += '<div class="item"><div class="ans">' + qq.q + ' · ' + qq.answer + '</div>';
+      html += '<div class="qzh">' + ToeicQuiz.escapeHtml(qq.zh_stem) + '</div><div class="opts-zh">';
+      Object.keys(qq.zh_opts).forEach(function (k) {
+        html += '(' + k + ') ' + ToeicQuiz.escapeHtml(qq.zh_opts[k]) + '<br>';
+      });
+      html += '</div><p>' + ToeicQuiz.escapeHtml(qq.rationale) + '</p></div>';
+    });
+    return html;
+  }
+
+  fetch(BASE + 'data/part7.json').then(function (r) { return r.json(); }).then(function (d) {
+    var list = d[type] || d.single;
+    set = list[0];
+    document.getElementById('meta').textContent = set.meta;
+    document.getElementById('dir').textContent = set.dir;
+    document.getElementById('passage').innerHTML = set.passage_html;
+    document.getElementById('recLabel').textContent = set.recLabel || '3:00';
+    document.getElementById('timerBar').setAttribute('data-rec-sec', String(set.recSec || 180));
+    qsEl.innerHTML = set.questions.map(function (qq) {
+      return '<div class="q" data-q="' + qq.q + '" data-ans="' + qq.answer + '">' +
+        '<div class="stem">' + qq.q + '. ' + ToeicQuiz.escapeHtml(qq.stem) + '</div>' +
+        ToeicQuiz.renderOptions(qq.choices) + '</div>';
+    }).join('');
+    ToeicQuiz.bindOptions(qsEl, picks);
+    timer = ToeicQuiz.attachTimer(document.getElementById('timerBar'), document.getElementById('check'));
+    document.getElementById('explain').innerHTML = buildExplain();
+  });
+
+  document.getElementById('check').addEventListener('click', function () {
+    var r = ToeicQuiz.grade(qsEl, picks, 'part7-' + type);
+    var msg = document.getElementById('timerStatus').textContent;
+    document.getElementById('score').textContent = '得分：' + r.right + ' / ' + r.total + (msg ? ' · ' + msg : '');
+    document.getElementById('explain').classList.add('show');
+    ToeicStore.setProgress('part7-' + type, r);
+  });
+  document.getElementById('reset').onclick = function () {
+    location.reload();
+  };
+  document.getElementById('toggleExplain').onclick = function () {
+    document.getElementById('explain').classList.toggle('show');
+  };
+})();
+</script>
+</body>
+</html>

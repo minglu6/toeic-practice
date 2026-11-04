@@ -1,0 +1,65 @@
+{
+  "title": "Part 2 · Question-Response",
+  "sets": [
+    {
+      "id": "p2-1",
+      "audio": "audio/part2/q1.mp3",
+      "question": "Where should I put these shipping labels?",
+      "answer": "B",
+      "choices": {
+        "A": "They arrive every Tuesday.",
+        "B": "On the shelf next to the printer.",
+        "C": "Yes, I ordered more last week."
+      },
+      "zh": {
+        "q": "这些货运标签应该放哪里？",
+        "opts": {
+          "A": "它们每周二到。",
+          "B": "放在打印机旁边的架子上。",
+          "C": "是的，我上周又订了一些。"
+        },
+        "rationale": "Where 问地点，B 给位置。A 说时间，C 答 yes/no，均不对应。"
+      }
+    },
+    {
+      "id": "p2-2",
+      "audio": "audio/part2/q2.mp3",
+      "question": "Has the client approved the revised proposal?",
+      "answer": "A",
+      "choices": {
+        "A": "Not yet — they're still reviewing it.",
+        "B": "It's scheduled for Thursday morning.",
+        "C": "In the conference room upstairs."
+      },
+      "zh": {
+        "q": "客户批准修订后的方案了吗？",
+        "opts": {
+          "A": "还没有——他们仍在审阅。",
+          "B": "安排在周四上午。",
+          "C": "在楼上会议室。"
+        },
+        "rationale": "Has…? 是一般疑问，A 直接回应审批进度。B 像答时间，C 答地点。"
+      }
+    },
+    {
+      "id": "p2-3",
+      "audio": "audio/part2/q3.mp3",
+      "question": "Who is covering the front desk this afternoon?",
+      "answer": "C",
+      "choices": {
+        "A": "About two hours from now.",
+        "B": "Please use the side entrance.",
+        "C": "Marco said he would."
+      },
+      "zh": {
+        "q": "今天下午谁负责前台？",
+        "opts": {
+          "A": "大约两小时后。",
+          "B": "请走侧门。",
+          "C": "Marco 说他会负责。"
+        },
+        "rationale": "Who 问人，C 点名 Marco。A 时间、B 路线无关。"
+      }
+    }
+  ]
+}

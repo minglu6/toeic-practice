@@ -1,0 +1,124 @@
+{
+  "title": "Part 5 · Incomplete Sentences",
+  "sets": [
+    {
+      "id": "p5-set1",
+      "questions": [
+        {
+          "q": "101",
+          "stem": "The marketing team will ----- the new campaign until customer feedback has been reviewed.",
+          "answer": "B",
+          "choices": {
+            "A": "launching",
+            "B": "postpone",
+            "C": "postponement",
+            "D": "to postpone"
+          },
+          "zh_stem": "在审阅客户反馈之前，市场团队将 ----- 新活动。",
+          "zh_opts": {
+            "A": "正在推出",
+            "B": "推迟",
+            "C": "推迟（名词）",
+            "D": "去推迟"
+          },
+          "rationale": "will + 原形动词 → postpone。A 分词、C 名词、D 带 to 不定式都不对。"
+        },
+        {
+          "q": "102",
+          "stem": "All visitors must present ----- identification at the security desk before entering the laboratory.",
+          "answer": "A",
+          "choices": {
+            "A": "valid",
+            "B": "validly",
+            "C": "validity",
+            "D": "validate"
+          },
+          "zh_stem": "所有访客进入实验室前必须在安检台出示 ----- 证件。",
+          "zh_opts": {
+            "A": "有效的",
+            "B": "有效地",
+            "C": "有效性",
+            "D": "验证"
+          },
+          "rationale": "修饰名词 identification 用形容词 valid。"
+        },
+        {
+          "q": "103",
+          "stem": "Ms. Ortega was praised for completing the audit ----- ahead of the deadline.",
+          "answer": "A",
+          "choices": {
+            "A": "well",
+            "B": "good",
+            "C": "much",
+            "D": "most"
+          },
+          "zh_stem": "Ortega 女士因在截止日期之前很好地完成审计而受到表扬。",
+          "zh_opts": {
+            "A": "很好地",
+            "B": "好的",
+            "C": "很多",
+            "D": "最"
+          },
+          "rationale": "修饰动词 completing 的方式状语用副词 well，不用形容词 good。"
+        },
+        {
+          "q": "104",
+          "stem": "Please submit your travel receipts ----- seven days of returning from the conference.",
+          "answer": "D",
+          "choices": {
+            "A": "among",
+            "B": "during",
+            "C": "except",
+            "D": "within"
+          },
+          "zh_stem": "请在会议返回后 ----- 七天内提交差旅发票。",
+          "zh_opts": {
+            "A": "在…之中",
+            "B": "在…期间",
+            "C": "除了",
+            "D": "在…之内"
+          },
+          "rationale": "within + 时间段 = 在…之内。"
+        },
+        {
+          "q": "105",
+          "stem": "The factory's output has increased ----- since the new assembly line was installed.",
+          "answer": "B",
+          "choices": {
+            "A": "drama",
+            "B": "dramatically",
+            "C": "dramatic",
+            "D": "dramatize"
+          },
+          "zh_stem": "自新装配线安装以来，工厂产量 ----- 增长。",
+          "zh_opts": {
+            "A": "戏剧",
+            "B": "显著地",
+            "C": "显著的",
+            "D": "使戏剧化"
+          },
+          "rationale": "修饰动词 increased 用副词 dramatically。"
+        },
+        {
+          "q": "106",
+          "stem": "Neither the director ----- the assistants were available to take the call.",
+          "answer": "C",
+          "choices": {
+            "A": "or",
+            "B": "and",
+            "C": "nor",
+            "D": "but"
+          },
+          "zh_stem": "导演 ----- 助手都无法接听电话。",
+          "zh_opts": {
+            "A": "或者",
+            "B": "和",
+            "C": "也不",
+            "D": "但是"
+          },
+          "rationale": "Neither … nor … 固定搭配。"
+        }
+      ]
+    }
+  ]
+}

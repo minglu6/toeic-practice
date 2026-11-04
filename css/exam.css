@@ -1,0 +1,143 @@
+/* Booklet exam sheet (Part 7 + shared quiz chrome) */
+body.exam {
+  margin: 0;
+  background: #cfc9be;
+  color: #000;
+  font-family: "Times New Roman", Times, "Liberation Serif", "Noto Serif CJK SC", "Songti SC", serif;
+  font-size: 15px;
+  line-height: 1.35;
+}
+.sheet {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+  padding: 16px 14px calc(32px + env(safe-area-inset-bottom));
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+@media (min-width: 720px) {
+  body.exam { padding: 18px 0 28px; }
+  .sheet {
+    min-height: auto;
+    padding: 26px 34px 36px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.15);
+    border: 0;
+  }
+}
+.sans, .header, .dir, .doc-label, .q, .stem, .opt, .actions, .btn, .score, .note,
+.explain h2, .explain .ans, .explain .qzh, .explain .opts-zh, .field, .timer-bar,
+.audio-bar, .listen-ui, .photo-wrap, .choice-list {
+  font-family: Arial, Helvetica, "Helvetica Neue", "Nimbus Sans", "Liberation Sans", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+}
+.header {
+  border-bottom: 2px solid #000;
+  padding-bottom: 7px;
+  margin-bottom: 12px;
+}
+.header .part {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.header .meta { font-size: 11px; margin-top: 3px; color: #222; }
+.dir { font-size: 12px; font-style: italic; margin: 0 0 12px; }
+.doc-label { font-size: 11px; font-weight: 700; margin: 14px 0 5px; letter-spacing: .02em; }
+.email, .notice, .web, .sched, .memo, .ad {
+  border: 1px solid #000;
+  padding: 10px 11px 12px;
+  margin-bottom: 8px;
+  background: #fff;
+}
+.field { font-size: 12px; line-height: 1.4; margin-bottom: 1px; word-break: break-word; }
+.field b { font-weight: 700; }
+.subj { margin-top: 3px; padding-bottom: 7px; border-bottom: 1px solid #666; margin-bottom: 9px; }
+.body {
+  font-family: "Times New Roman", Times, "Liberation Serif", "Noto Serif CJK SC", serif;
+  font-size: 14.5px;
+  line-height: 1.38;
+}
+.body p { margin: 0 0 8px; }
+.body p:last-child { margin-bottom: 0; }
+.notice h3, .web h3, .sched h3, .memo h3, .ad h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px; font-weight: 700; margin-bottom: 5px;
+}
+.q { margin: 14px 0 0; }
+.stem { font-size: 13px; font-weight: 700; margin-bottom: 4px; line-height: 1.35; }
+.opt {
+  display: block; width: 100%; text-align: left;
+  font-size: 12.5px; line-height: 1.4;
+  padding: 3px 2px 3px 1.6em; text-indent: -1.35em;
+  margin-bottom: 1px; border: 0; border-radius: 0;
+  background: transparent; color: #000; cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,.08);
+}
+.opt.picked { background: #e8e8e8; }
+.opt.correct { background: #d9e6d9; }
+.opt.wrong { background: #efd9d9; }
+.opt:disabled { cursor: default; opacity: 1; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 8px; }
+.btn {
+  font-size: 12px; padding: 9px 12px;
+  border: 1px solid #000; border-radius: 0;
+  background: #fff; color: #000; cursor: pointer;
+}
+.btn.primary { background: #000; color: #fff; }
+.score { font-size: 12px; color: #222; margin-bottom: 8px; min-height: 1.1em; }
+.explain {
+  display: none; border: 1px solid #000; padding: 12px 11px;
+  margin-top: 8px; background: #f7f7f7;
+}
+.explain.show { display: block; }
+.explain h2 { font-size: 13px; font-weight: 700; margin: 14px 0 7px; }
+.explain h2:first-child { margin-top: 0; }
+.explain .zh {
+  font-family: "Times New Roman", Times, "Noto Serif CJK SC", serif;
+  font-size: 13.5px; line-height: 1.4; margin-bottom: 8px;
+}
+.explain .zh p { margin: 0 0 7px; }
+.explain .item {
+  margin-bottom: 12px;
+  font-family: "Times New Roman", Times, "Noto Serif CJK SC", serif;
+  font-size: 13.5px; padding-bottom: 10px; border-bottom: 1px solid #bbb;
+}
+.explain .item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+.explain .ans { font-size: 12.5px; font-weight: 700; margin-bottom: 3px; }
+.explain .qzh { font-size: 12px; color: #222; margin-bottom: 5px; }
+.explain .opts-zh {
+  font-size: 12px; line-height: 1.45; margin: 0 0 5px;
+  padding: 7px 8px; background: #ececec; border: 1px solid #bbb;
+}
+.timer-bar {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 14px;
+  border: 1px solid #000; background: #f3f3f3; padding: 8px 10px;
+  margin: 0 0 12px; font-size: 12px; line-height: 1.35;
+  position: sticky; top: 0; z-index: 50; box-shadow: 0 1px 0 #000;
+}
+.timer-bar .clock { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 15px; }
+.timer-bar .rec { color: #222; font-size: 11px; flex: 1 1 120px; }
+.timer-bar.over { background: #f5e8e8; }
+.timer-bar .btn-timer {
+  margin-left: auto; font-size: 11px; padding: 4px 8px;
+  border: 1px solid #000; background: #fff; cursor: pointer;
+}
+.audio-bar {
+  border: 1px solid #000; padding: 10px; margin-bottom: 12px; background: #fafafa;
+}
+.audio-bar audio { width: 100%; margin-top: 6px; }
+.photo-wrap {
+  border: 1px solid #000; padding: 8px; margin-bottom: 12px; background: #fff; text-align: center;
+}
+.photo-wrap svg, .photo-wrap img { max-width: 100%; height: auto; }
+.set-nav { font-size: 12px; margin: 0 0 10px; color: #333; }
+.blank { display: inline-block; min-width: 2.2em; border-bottom: 1px solid #000; text-align: center; font-weight: 700; }
+.vocab-card {
+  border: 1px solid #000; background: #fff; padding: 14px; margin-bottom: 10px;
+}
+.vocab-card .word { font-size: 22px; font-weight: 700; }
+.vocab-card .ipa { font-size: 13px; color: #444; margin-top: 2px; }
+.vocab-card .zh { font-size: 14px; margin-top: 6px; }
+.vocab-card .ex { font-size: 13px; margin-top: 8px; font-style: italic; color: #222; }
+.hidden { display: none !important; }

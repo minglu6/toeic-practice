@@ -1,0 +1,308 @@
+{
+  "title": "Part 7 · Reading Comprehension",
+  "single": [
+    {
+      "id": "p7s-1",
+      "meta": "Questions 147–150 · Single passage",
+      "dir": "Questions 147–150 refer to the following e-mail.",
+      "recSec": 180,
+      "recLabel": "3:00",
+      "passage_html": "<article class=\"email\">\n<div class=\"field\"><b>From</b> Mina Park, Human Resources</div>\n<div class=\"field\"><b>To</b> All Department Managers</div>\n<div class=\"field\"><b>Date</b> October 24</div>\n<div class=\"field subj\"><b>Subject</b> Stakeholder briefing — Plant B restructuring</div>\n<div class=\"body\">\n<p>Dear Managers,</p>\n<p>As announced last week, Plant B will complete its restructuring by November 30. Before we finalize the employee list, please join a stakeholder meeting on Monday at 10:00 a.m. in Conference Room A. Key stakeholders from Operations, Finance, and Legal will review the project timeline and confirm which roles are affected.</p>\n<p>Employees whose positions are eliminated will receive a severance package equal to four months of base pay, plus continued health coverage through year-end. Managers must not discuss individual cases until HR has issued a formal termination notice. If you have questions about accounts payable related to the package, contact Finance before Friday.</p>\n<p>Please reply by 5:00 p.m. today to confirm your attendance. We will reconvene the same group next Thursday if a quorum is not reached on Monday.</p>\n<p>Regards,<br>Mina Park<br>HR Business Partner</p>\n</div></article>",
+      "questions": [
+        {
+          "q": "147",
+          "stem": "What is the main purpose of the e-mail?",
+          "answer": "B",
+          "choices": {
+            "A": "To announce the opening of a new plant",
+            "B": "To invite managers to a meeting about restructuring",
+            "C": "To request approval for a government subsidy",
+            "D": "To introduce a new company spokesperson"
+          },
+          "zh_stem": "这封邮件的主要目的是什么？",
+          "zh_opts": {
+            "A": "宣布新工厂开业",
+            "B": "邀请经理参加有关重组的会议",
+            "C": "申请政府补贴批准",
+            "D": "介绍新的公司发言人"
+          },
+          "rationale": "邮件核心是请经理参加周一 stakeholder meeting 讨论重组。"
+        },
+        {
+          "q": "148",
+          "stem": "According to the e-mail, what will affected employees receive?",
+          "answer": "B",
+          "choices": {
+            "A": "A promotion and a training stipend",
+            "B": "Four months of base pay and health coverage through year-end",
+            "C": "A monthly retainer and stock options",
+            "D": "Only a written apology from Legal"
+          },
+          "zh_stem": "根据邮件，受影响员工将获得什么？",
+          "zh_opts": {
+            "A": "升职与培训津贴",
+            "B": "四个月基本工资，以及持续至年底的医保",
+            "C": "月度顾问费与股票期权",
+            "D": "仅法务部的书面道歉"
+          },
+          "rationale": "four months of base pay, plus continued health coverage through year-end。"
+        },
+        {
+          "q": "149",
+          "stem": "When should managers reply to confirm attendance?",
+          "answer": "B",
+          "choices": {
+            "A": "Before Friday",
+            "B": "By 5:00 p.m. today",
+            "C": "On November 30",
+            "D": "Next Thursday morning"
+          },
+          "zh_stem": "经理应在何时回复确认出席？",
+          "zh_opts": {
+            "A": "周五之前",
+            "B": "今日下午 5:00 前",
+            "C": "11 月 30 日",
+            "D": "下周四上午"
+          },
+          "rationale": "reply by 5:00 p.m. today。「周五前」是联系财务的时限。"
+        },
+        {
+          "q": "150",
+          "stem": "What will happen if not enough people attend on Monday?",
+          "answer": "C",
+          "choices": {
+            "A": "The restructuring will be canceled",
+            "B": "Finance will issue severance immediately",
+            "C": "The same group will meet again next Thursday",
+            "D": "Legal will publish the employee list online"
+          },
+          "zh_stem": "若周一出席人数不够会发生什么？",
+          "zh_opts": {
+            "A": "重组将被取消",
+            "B": "财务部将立即发放遣散费",
+            "C": "同一批人将于下周四再开会",
+            "D": "法务部将在网上公布员工名单"
+          },
+          "rationale": "reconvene … next Thursday if a quorum is not reached。"
+        }
+      ],
+      "zh_passage": "发件人：Mina Park，人力资源部 / 收件人：各部门经理 / 日期：10 月 24 日 / 主题：利益相关方简报——B 厂重组\n各位经理：如上周所宣布，B 厂将于 11 月 30 日前完成重组。请于周一上午 10:00 到 A 会议室参加会议。运营、财务与法务关键干系人将审阅时间表并确认受影响岗位。岗位取消者将获四个月基本工资遣散方案及至年底医保。正式解雇通知发出前经理不得讨论个案。应付账款问题请周五前联系财务。请今日下午 5:00 前回复确认；若周一未达法定人数，下周四复会。"
+    }
+  ],
+  "double": [
+    {
+      "id": "p7d-1",
+      "meta": "Questions 176–180 · Double passage",
+      "dir": "Questions 176–180 refer to the following advertisement and e-mail.",
+      "recSec": 225,
+      "recLabel": "3:45",
+      "passage_html": "<div class=\"doc-label\">Advertisement</div>\n<article class=\"ad\"><h3>Harborview Business Suites — Short-Term Offices</h3>\n<div class=\"body\">\n<p>Fully furnished offices available by the week or month. Packages include high-speed internet, meeting rooms, and weekday reception service from 8:00 a.m. to 6:00 p.m.</p>\n<p>• Standard Suite: $650 / week<br>• Corner Suite: $890 / week<br>• Virtual Mailbox only: $45 / month</p>\n<p>Book online at harborview-suites.example or call 555-0142. Mention code SPRING10 for 10% off stays of two weeks or longer.</p>\n</div></article>\n<div class=\"doc-label\">E-mail</div>\n<article class=\"email\">\n<div class=\"field\"><b>From</b> Kenji Watanabe</div>\n<div class=\"field\"><b>To</b> reservations@harborview-suites.example</div>\n<div class=\"field\"><b>Date</b> April 2</div>\n<div class=\"field subj\"><b>Subject</b> Corner Suite inquiry — April 14–25</div>\n<div class=\"body\">\n<p>Hello,</p>\n<p>I need a Corner Suite from April 14 through April 25 for a visiting consultant. We will require meeting-room access on April 16 and 17. Please confirm availability and whether code SPRING10 can be applied. Invoice should go to Accounts Payable at Apex Logistics.</p>\n<p>Thank you,<br>Kenji Watanabe<br>Apex Logistics</p>\n</div></article>",
+      "questions": [
+        {
+          "q": "176",
+          "stem": "What is being advertised?",
+          "answer": "A",
+          "choices": {
+            "A": "Short-term office space",
+            "B": "Hotel guest rooms",
+            "C": "Warehouse storage",
+            "D": "Language training"
+          },
+          "zh_stem": "广告在宣传什么？",
+          "zh_opts": {
+            "A": "短期办公空间",
+            "B": "酒店客房",
+            "C": "仓储",
+            "D": "语言培训"
+          },
+          "rationale": "Short-Term Offices / furnished offices。"
+        },
+        {
+          "q": "177",
+          "stem": "What discount code is mentioned in the advertisement?",
+          "answer": "C",
+          "choices": {
+            "A": "APEX10",
+            "B": "CORNER10",
+            "C": "SPRING10",
+            "D": "WEEKLY10"
+          },
+          "zh_stem": "广告提到的折扣码是？",
+          "zh_opts": {
+            "A": "APEX10",
+            "B": "CORNER10",
+            "C": "SPRING10",
+            "D": "WEEKLY10"
+          },
+          "rationale": "Mention code SPRING10。"
+        },
+        {
+          "q": "178",
+          "stem": "For which dates does Mr. Watanabe need the suite?",
+          "answer": "B",
+          "choices": {
+            "A": "April 2–10",
+            "B": "April 14–25",
+            "C": "April 16–17 only",
+            "D": "The entire month of April"
+          },
+          "zh_stem": "Watanabe 先生需要套房的日期是？",
+          "zh_opts": {
+            "A": "4/2–10",
+            "B": "4/14–25",
+            "C": "仅 4/16–17",
+            "D": "整个四月"
+          },
+          "rationale": "from April 14 through April 25。16–17 是会议室需求日。"
+        },
+        {
+          "q": "179",
+          "stem": "What type of suite does he request?",
+          "answer": "D",
+          "choices": {
+            "A": "Standard Suite",
+            "B": "Virtual Mailbox",
+            "C": "Meeting room only",
+            "D": "Corner Suite"
+          },
+          "zh_stem": "他要哪种套房？",
+          "zh_opts": {
+            "A": "标准套房",
+            "B": "虚拟邮箱",
+            "C": "只要会议室",
+            "D": "转角套房"
+          },
+          "rationale": "I need a Corner Suite。"
+        },
+        {
+          "q": "180",
+          "stem": "Who should receive the invoice?",
+          "answer": "A",
+          "choices": {
+            "A": "Accounts Payable at Apex Logistics",
+            "B": "Harborview reception",
+            "C": "The visiting consultant directly",
+            "D": "Facilities at Apex"
+          },
+          "zh_stem": "发票应开给谁？",
+          "zh_opts": {
+            "A": "Apex Logistics 应付账款",
+            "B": "Harborview 前台",
+            "C": "顾问本人",
+            "D": "Apex 后勤"
+          },
+          "rationale": "Invoice should go to Accounts Payable at Apex Logistics。"
+        }
+      ],
+      "zh_passage": "广告：Harborview 商务套房提供按周/月短租全配办公，含网络、会议室与平日前台。标准 $650/周，转角 $890/周，虚拟邮箱 $45/月。两周及以上可用 SPRING10 九折。\n邮件：Kenji 需 4/14–25 转角套房，16–17 要用会议室，确认是否可用 SPRING10，发票开给 Apex Logistics 应付账款。"
+    }
+  ],
+  "triple": [
+    {
+      "id": "p7t-1",
+      "meta": "Questions 196–200 · Triple passage",
+      "dir": "Questions 196–200 refer to the following schedule, notice, and e-mail.",
+      "recSec": 225,
+      "recLabel": "3:45",
+      "passage_html": "<div class=\"doc-label\">Schedule</div>\n<article class=\"sched\"><h3>City Innovation Forum — May 12</h3>\n<table class=\"sched-table\" style=\"width:100%;border-collapse:collapse;font-size:12px;font-family:Arial,sans-serif\">\n<tr><th style=\"border:1px solid #000;padding:5px;background:#e6e6e6\">Time</th><th style=\"border:1px solid #000;padding:5px;background:#e6e6e6\">Session</th><th style=\"border:1px solid #000;padding:5px;background:#e6e6e6\">Room</th></tr>\n<tr><td style=\"border:1px solid #000;padding:5px\">9:00–10:15</td><td style=\"border:1px solid #000;padding:5px\">Opening Keynote: Green Logistics</td><td style=\"border:1px solid #000;padding:5px\">Hall A</td></tr>\n<tr><td style=\"border:1px solid #000;padding:5px\">10:30–11:45</td><td style=\"border:1px solid #000;padding:5px\">Workshop: Inventory Software</td><td style=\"border:1px solid #000;padding:5px\">Room 12</td></tr>\n<tr><td style=\"border:1px solid #000;padding:5px\">1:00–2:30</td><td style=\"border:1px solid #000;padding:5px\">Panel: Last-Mile Delivery</td><td style=\"border:1px solid #000;padding:5px\">Hall B</td></tr>\n</table></article>\n<div class=\"doc-label\">Notice</div>\n<article class=\"notice\"><h3>Room Change</h3>\n<div class=\"body\"><p>Due to audio equipment issues, the 10:30 Inventory Software workshop has been moved from Room 12 to Room 18. Signage will be posted at both doors. The keynote and afternoon panel are unchanged.</p></div></article>\n<div class=\"doc-label\">E-mail</div>\n<article class=\"email\">\n<div class=\"field\"><b>From</b> Lena Cho</div>\n<div class=\"field\"><b>To</b> team@apexlogistics.example</div>\n<div class=\"field subj\"><b>Subject</b> Forum plan — May 12</div>\n<div class=\"body\">\n<p>Team,</p>\n<p>I'll attend the opening keynote and the inventory workshop. Please cover the afternoon panel and send me bullet notes by 5:00 p.m. the same day. Registration badges are at the south entrance.</p>\n<p>— Lena</p>\n</div></article>",
+      "questions": [
+        {
+          "q": "196",
+          "stem": "What is the topic of the opening keynote?",
+          "answer": "B",
+          "choices": {
+            "A": "Inventory Software",
+            "B": "Green Logistics",
+            "C": "Last-Mile Delivery",
+            "D": "Audio equipment"
+          },
+          "zh_stem": "开幕主题演讲的主题是？",
+          "zh_opts": {
+            "A": "库存软件",
+            "B": "绿色物流",
+            "C": "末端配送",
+            "D": "音响设备"
+          },
+          "rationale": "Opening Keynote: Green Logistics。"
+        },
+        {
+          "q": "197",
+          "stem": "Where will the inventory workshop be held after the change?",
+          "answer": "C",
+          "choices": {
+            "A": "Hall A",
+            "B": "Room 12",
+            "C": "Room 18",
+            "D": "Hall B"
+          },
+          "zh_stem": "变更后库存研讨会在哪里举行？",
+          "zh_opts": {
+            "A": "A 厅",
+            "B": "12 室",
+            "C": "18 室",
+            "D": "B 厅"
+          },
+          "rationale": "moved from Room 12 to Room 18。"
+        },
+        {
+          "q": "198",
+          "stem": "Which session is Lena Cho NOT planning to attend?",
+          "answer": "D",
+          "choices": {
+            "A": "The opening keynote",
+            "B": "The inventory workshop",
+            "C": "Badge pickup",
+            "D": "The afternoon panel"
+          },
+          "zh_stem": "Lena Cho 不打算参加哪场？",
+          "zh_opts": {
+            "A": "开幕演讲",
+            "B": "库存研讨",
+            "C": "领胸牌",
+            "D": "下午小组讨论"
+          },
+          "rationale": "她请团队 cover the afternoon panel。"
+        },
+        {
+          "q": "199",
+          "stem": "By when does Lena want notes from the panel?",
+          "answer": "A",
+          "choices": {
+            "A": "By 5:00 p.m. the same day",
+            "B": "Before the keynote",
+            "C": "The following morning",
+            "D": "Within two weeks"
+          },
+          "zh_stem": "Lena 希望何时收到小组讨论笔记？",
+          "zh_opts": {
+            "A": "当天傍晚 5:00 前",
+            "B": "主题演讲前",
+            "C": "次日上午",
+            "D": "两周内"
+          },
+          "rationale": "send me bullet notes by 5:00 p.m. the same day。"
+        },
+        {
+          "q": "200",
+          "stem": "Where can attendees pick up registration badges?",
+          "answer": "B",
+          "choices": {
+            "A": "Room 18",
+            "B": "The south entrance",
+            "C": "Hall B reception",
+            "D": "Online only"
+          },
+          "zh_stem": "与会者在哪里领取胸牌？",
+          "zh_opts": {
+            "A": "18 室",
+            "B": "南门",
+            "C": "B 厅接待处",
+            "D": "仅线上"
+          },
+          "rationale": "Registration badges are at the south entrance。"
+        }
+      ],
+      "zh_passage": "日程：5/12 创新论坛——9:00 绿色物流主题演讲（A 厅）；10:30 库存软件研讨（原 12 室）；1:00 末端配送小组（B 厅）。\n通知：因音响问题，10:30 研讨改至 18 室。\n邮件：Lena 参加开幕与库存研讨，请同事覆盖下午小组并于当日 17:00 前发要点；胸牌在南门领取。"
+    }
+  ]
+}

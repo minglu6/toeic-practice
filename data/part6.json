@@ -1,0 +1,85 @@
+{
+  "title": "Part 6 · Text Completion",
+  "sets": [
+    {
+      "id": "p6-1",
+      "dir": "Questions 131–134 refer to the following notice.",
+      "passage_html": "<article class=\"notice\"><h3>Notice — Lobby Renovation</h3>\n<p class=\"meta\">Posted by Building Management · March 3</p>\n<div class=\"body\">\n<p>Beginning Monday, contractors will renovate the main lobby. The work is expected to last approximately two weeks. During this period, employees should enter through the west side door.</p>\n<p>_____(131)_____ the construction zone will be clearly marked with barriers. Please do not cross into restricted areas.</p>\n<p>Elevator service to floors 2–8 will remain normal. _____(132)_____ the service elevator may be reserved for construction crews between 9:00 a.m. and noon.</p>\n<p>We apologize for any inconvenience and appreciate your _____(133)_____. For questions, contact Facilities at ext. 4400. An updated schedule will be _____(134)_____ on the intranet each Friday.</p>\n</div></article>",
+      "questions": [
+        {
+          "q": "131",
+          "answer": "B",
+          "choices": {
+            "A": "However",
+            "B": "Additionally",
+            "C": "Otherwise",
+            "D": "Instead"
+          },
+          "zh_stem": "空格 131",
+          "zh_opts": {
+            "A": "然而",
+            "B": "此外",
+            "C": "否则",
+            "D": "反而"
+          },
+          "rationale": "承接上文补充说明施工区会有围挡标识 → Additionally。"
+        },
+        {
+          "q": "132",
+          "answer": "A",
+          "choices": {
+            "A": "However",
+            "B": "Therefore",
+            "C": "Similarly",
+            "D": "For example"
+          },
+          "zh_stem": "空格 132",
+          "zh_opts": {
+            "A": "然而",
+            "B": "因此",
+            "C": "同样",
+            "D": "例如"
+          },
+          "rationale": "电梯正常 vs 服务梯可能被征用，转折用 However。"
+        },
+        {
+          "q": "133",
+          "answer": "C",
+          "choices": {
+            "A": "patient",
+            "B": "patients",
+            "C": "patience",
+            "D": "patiently"
+          },
+          "zh_stem": "空格 133",
+          "zh_opts": {
+            "A": "有耐心的",
+            "B": "病人",
+            "C": "耐心",
+            "D": "耐心地"
+          },
+          "rationale": "your + 名词 → patience。"
+        },
+        {
+          "q": "134",
+          "answer": "D",
+          "choices": {
+            "A": "post",
+            "B": "posting",
+            "C": "to post",
+            "D": "posted"
+          },
+          "zh_stem": "空格 134",
+          "zh_opts": {
+            "A": "张贴",
+            "B": "正在张贴",
+            "C": "去张贴",
+            "D": "被张贴"
+          },
+          "rationale": "被动 be + 过去分词 → posted。"
+        }
+      ],
+      "zh_passage": "通知——大堂翻新\n自周一起承包商将翻新主大堂，预计约两周。期间员工请走西侧门进入。此外，施工区将有围挡清晰标识，请勿进入限制区域。2–8 层电梯正常；但服务电梯在上午 9:00–12:00 可能供施工队使用。造成不便敬请见谅，感谢您的耐心。有问题请打分机 4400。更新日程将于每周五发布在内网。"
+    }
+  ]
+}

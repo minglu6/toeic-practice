@@ -1,0 +1,70 @@
+{
+  "title": "Part 4 · Talks",
+  "sets": [
+    {
+      "id": "p4-1",
+      "audio": "audio/part4/set1.mp3",
+      "transcript_en": "Good morning, everyone. This is a reminder that the building's fire drill will take place tomorrow at 10:15 a.m. When the alarm sounds, please leave your desks immediately and exit through the nearest stairwell. Do not use the elevators. Assembly Point B is located in the north parking lot near the flagpole. Department supervisors should bring their attendance sheets. If you have mobility concerns, contact Facilities today so we can arrange assistance. Thank you for your cooperation.",
+      "transcript_zh": "各位早上好。提醒大家：大楼消防演习将于明天上午 10:15 举行。警报响起后，请立即离开座位，从最近的楼梯间撤离，不要使用电梯。集合点 B 位于北停车场旗杆附近。各部门主管请携带考勤表。如有行动不便，请于今日联系后勤部以便安排协助。感谢配合。",
+      "questions": [
+        {
+          "q": "1",
+          "stem": "What is the purpose of the announcement?",
+          "answer": "A",
+          "choices": {
+            "A": "To inform staff about a fire drill",
+            "B": "To announce a parking fee increase",
+            "C": "To introduce a new Facilities manager",
+            "D": "To cancel tomorrow's staff meeting"
+          },
+          "zh_stem": "这则通知的目的是什么？",
+          "zh_opts": {
+            "A": "通知员工消防演习",
+            "B": "宣布停车费上涨",
+            "C": "介绍新后勤经理",
+            "D": "取消明天员工会议"
+          },
+          "rationale": "开场即 reminder … fire drill。"
+        },
+        {
+          "q": "2",
+          "stem": "Where should people gather after exiting?",
+          "answer": "C",
+          "choices": {
+            "A": "In the lobby by the elevators",
+            "B": "Outside the south entrance",
+            "C": "In the north parking lot near the flagpole",
+            "D": "On the rooftop terrace"
+          },
+          "zh_stem": "撤离后应在哪里集合？",
+          "zh_opts": {
+            "A": "电梯旁大厅",
+            "B": "南门外",
+            "C": "北停车场旗杆附近",
+            "D": "屋顶露台"
+          },
+          "rationale": "Assembly Point B … north parking lot near the flagpole。"
+        },
+        {
+          "q": "3",
+          "stem": "What should people with mobility concerns do?",
+          "answer": "B",
+          "choices": {
+            "A": "Wait in the elevators",
+            "B": "Contact Facilities today",
+            "C": "Bring an attendance sheet",
+            "D": "Stay at their desks during the drill"
+          },
+          "zh_stem": "行动不便者应怎么做？",
+          "zh_opts": {
+            "A": "在电梯里等待",
+            "B": "今天联系后勤部",
+            "C": "携带考勤表",
+            "D": "演习时留在座位"
+          },
+          "rationale": "contact Facilities today so we can arrange assistance。"
+        }
+      ]
+    }
+  ]
+}

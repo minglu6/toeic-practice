@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#1a1a1a" />
+<meta name="description" content="托业考试练习 — 听力 / 阅读全题型与基础训练 PWA" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="apple-touch-icon" href="icons/icon-192.png" />
+<link rel="icon" href="icons/icon-192.png" />
+<title>托业考试练习</title>
+<link rel="stylesheet" href="css/app.css" />
+</head>
+<body class="app">
+  <div class="app-shell">
+    <header class="brand">
+      <h1>托业考试练习</h1>
+      <p>听力 · 阅读 · 词汇语法基础 · 可安装 PWA</p>
+    </header>
+
+    <p class="progress-bar" id="progressLine">本地进度将保存在本机浏览器。</p>
+
+    <div class="sec">听力 Listening</div>
+    <div class="grid cols-2">
+      <a class="card" href="listening/part1.html"><div class="t">Part 1 照片描述</div><div class="d">看图选句 · 含音频</div></a>
+      <a class="card" href="listening/part2.html"><div class="t">Part 2 应答问题</div><div class="d">一问三答 · 含音频</div></a>
+      <a class="card" href="listening/part3.html"><div class="t">Part 3 短对话</div><div class="d">每组 3 题 · 原文译文</div></a>
+      <a class="card" href="listening/part4.html"><div class="t">Part 4 短独白</div><div class="d">通知/讲话 · 每组 3 题</div></a>
+    </div>
+
+    <div class="sec">阅读 Reading</div>
+    <div class="grid cols-2">
+      <a class="card" href="reading/part5.html"><div class="t">Part 5 句子填空</div><div class="d">语法词汇单项</div></a>
+      <a class="card" href="reading/part6.html"><div class="t">Part 6 段落填空</div><div class="d">文中选词 / 逻辑</div></a>
+      <a class="card" href="reading/part7.html?type=single"><div class="t">Part 7 单篇</div><div class="d">试卷风 · 建议 3:00</div></a>
+      <a class="card" href="reading/part7.html?type=double"><div class="t">Part 7 双篇</div><div class="d">试卷风 · 建议 3:45</div></a>
+      <a class="card" href="reading/part7.html?type=triple"><div class="t">Part 7 三篇</div><div class="d">试卷风 · 建议 3:45</div></a>
+    </div>
+
+    <div class="sec">基础 Basics</div>
+    <div class="grid cols-2">
+      <a class="card" href="basics/vocab.html"><div class="t">词汇卡片</div><div class="d">职场词 60+ · 音标例句</div></a>
+      <a class="card" href="basics/grammar.html"><div class="t">语法速练</div><div class="d">Part 5 风格小题</div></a>
+      <a class="card" href="basics/wrongbook.html"><div class="t">错题本</div><div class="d">本机自动收集</div></a>
+    </div>
+
+    <div class="install-hint" id="installHint">
+      安装到主屏幕：浏览器菜单 →「安装应用」或「添加到主屏幕」。离线可打开已缓存的页面外壳。
+    </div>
+    <p class="note">练习内容为原创模拟题，非正式 ETS / TOEIC 考题。进度仅存于本机 localStorage。</p>
+  </div>
+<script src="js/config.js"></script>
+<script src="js/storage.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(function () {});
+}
+(function () {
+  var d = ToeicStore.get();
+  var n = Object.keys(d.progress || {}).length;
+  var w = (d.wrong || []).length;
+  document.getElementById('progressLine').textContent =
+    '已练习模块 ' + n + ' · 错题本 ' + w + ' 条';
+})();
+</script>
+</body>
+</html>

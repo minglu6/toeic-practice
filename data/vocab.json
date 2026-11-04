@@ -1,0 +1,365 @@
+{
+  "title": "词汇基础练习",
+  "words": [
+    {
+      "word": "abandon",
+      "ipa": "/əˈbændən/",
+      "zh": "放弃；遗弃",
+      "example": "The firm decided to abandon the outdated product line."
+    },
+    {
+      "word": "abolish",
+      "ipa": "/əˈbɑːlɪʃ/",
+      "zh": "废除",
+      "example": "The committee voted to abolish the annual fee."
+    },
+    {
+      "word": "absence",
+      "ipa": "/ˈæbsəns/",
+      "zh": "缺席；缺乏",
+      "example": "Please report any absence to your supervisor."
+    },
+    {
+      "word": "absorb",
+      "ipa": "/əbˈzɔːrb/",
+      "zh": "吸收；承担",
+      "example": "The company will absorb the extra shipping costs."
+    },
+    {
+      "word": "accelerate",
+      "ipa": "/əkˈseləreɪt/",
+      "zh": "加速",
+      "example": "We need to accelerate production before the holiday."
+    },
+    {
+      "word": "access",
+      "ipa": "/ˈækses/",
+      "zh": "进入；使用权",
+      "example": "Employees need a badge to access the lab."
+    },
+    {
+      "word": "accommodate",
+      "ipa": "/əˈkɑːmədeɪt/",
+      "zh": "容纳；迁就",
+      "example": "The hall can accommodate up to 300 guests."
+    },
+    {
+      "word": "accompany",
+      "ipa": "/əˈkʌmpəni/",
+      "zh": "陪伴；伴随",
+      "example": "A technician will accompany the inspector."
+    },
+    {
+      "word": "accomplish",
+      "ipa": "/əˈkɑːmplɪʃ/",
+      "zh": "完成",
+      "example": "She accomplished the audit ahead of schedule."
+    },
+    {
+      "word": "accordance",
+      "ipa": "/əˈkɔːrdns/",
+      "zh": "一致；按照",
+      "example": "Work must be done in accordance with safety rules."
+    },
+    {
+      "word": "accordingly",
+      "ipa": "/əˈkɔːrdɪŋli/",
+      "zh": "相应地",
+      "example": "Demand rose; we hired staff accordingly."
+    },
+    {
+      "word": "accountable",
+      "ipa": "/əˈkaʊntəbl/",
+      "zh": "负有责任的",
+      "example": "Managers are accountable for team performance."
+    },
+    {
+      "word": "accrual",
+      "ipa": "/əˈkruːəl/",
+      "zh": "应计；累积",
+      "example": "Review the vacation accrual on your payslip."
+    },
+    {
+      "word": "accurate",
+      "ipa": "/ˈækjərət/",
+      "zh": "准确的",
+      "example": "Please provide an accurate head count."
+    },
+    {
+      "word": "achieve",
+      "ipa": "/əˈtʃiːv/",
+      "zh": "达成",
+      "example": "The plant achieved record output in May."
+    },
+    {
+      "word": "acknowledge",
+      "ipa": "/əkˈnɑːlɪdʒ/",
+      "zh": "确认；承认",
+      "example": "Please acknowledge receipt of this memo."
+    },
+    {
+      "word": "acquire",
+      "ipa": "/əˈkwaɪər/",
+      "zh": "获得；收购",
+      "example": "They plan to acquire a regional competitor."
+    },
+    {
+      "word": "adequate",
+      "ipa": "/ˈædɪkwət/",
+      "zh": "足够的",
+      "example": "Ensure adequate lighting in the warehouse."
+    },
+    {
+      "word": "adjacent",
+      "ipa": "/əˈdʒeɪsnt/",
+      "zh": "毗邻的",
+      "example": "Parking is available in the adjacent lot."
+    },
+    {
+      "word": "adjust",
+      "ipa": "/əˈdʒʌst/",
+      "zh": "调整",
+      "example": "We may adjust prices after the review."
+    },
+    {
+      "word": "administer",
+      "ipa": "/ədˈmɪnɪstər/",
+      "zh": "管理；实施",
+      "example": "HR will administer the benefits survey."
+    },
+    {
+      "word": "advance",
+      "ipa": "/ədˈvæns/",
+      "zh": "提前；进展",
+      "example": "Please submit travel requests in advance."
+    },
+    {
+      "word": "advantage",
+      "ipa": "/ədˈvæntɪdʒ/",
+      "zh": "优势",
+      "example": "Local suppliers offer a cost advantage."
+    },
+    {
+      "word": "advertise",
+      "ipa": "/ˈædvərtaɪz/",
+      "zh": "做广告",
+      "example": "We will advertise the opening on the intranet."
+    },
+    {
+      "word": "advise",
+      "ipa": "/ədˈvaɪz/",
+      "zh": "建议；通知",
+      "example": "Legal advised us to delay the announcement."
+    },
+    {
+      "word": "affect",
+      "ipa": "/əˈfekt/",
+      "zh": "影响",
+      "example": "Weather may affect delivery schedules."
+    },
+    {
+      "word": "affiliate",
+      "ipa": "/əˈfɪlieɪt/",
+      "zh": "附属机构",
+      "example": "Our Taiwan affiliate handles local sales."
+    },
+    {
+      "word": "agenda",
+      "ipa": "/əˈdʒendə/",
+      "zh": "议程",
+      "example": "The agenda will be emailed by Friday."
+    },
+    {
+      "word": "allocate",
+      "ipa": "/ˈæləkeɪt/",
+      "zh": "分配",
+      "example": "Please allocate budget for training."
+    },
+    {
+      "word": "amend",
+      "ipa": "/əˈmend/",
+      "zh": "修改",
+      "example": "We need to amend the contract clause."
+    },
+    {
+      "word": "annual",
+      "ipa": "/ˈænjuəl/",
+      "zh": "每年的",
+      "example": "The annual report is due in March."
+    },
+    {
+      "word": "anticipate",
+      "ipa": "/ænˈtɪsɪpeɪt/",
+      "zh": "预期",
+      "example": "We anticipate higher demand next quarter."
+    },
+    {
+      "word": "apology",
+      "ipa": "/əˈpɑːlədʒi/",
+      "zh": "道歉",
+      "example": "Please accept our apology for the delay."
+    },
+    {
+      "word": "apparel",
+      "ipa": "/əˈpærəl/",
+      "zh": "服装",
+      "example": "The apparel division moved to a new warehouse."
+    },
+    {
+      "word": "applicable",
+      "ipa": "/ˈæplɪkəbl/",
+      "zh": "适用的",
+      "example": "Discounts are applicable to members only."
+    },
+    {
+      "word": "applicant",
+      "ipa": "/ˈæplɪkənt/",
+      "zh": "申请人",
+      "example": "Each applicant must submit a résumé."
+    },
+    {
+      "word": "appoint",
+      "ipa": "/əˈpɔɪnt/",
+      "zh": "任命；约定",
+      "example": "The board will appoint a new CFO."
+    },
+    {
+      "word": "appraisal",
+      "ipa": "/əˈpreɪzl/",
+      "zh": "评估",
+      "example": "Performance appraisals begin in June."
+    },
+    {
+      "word": "appropriate",
+      "ipa": "/əˈproʊpriət/",
+      "zh": "合适的",
+      "example": "Wear appropriate attire for client visits."
+    },
+    {
+      "word": "approve",
+      "ipa": "/əˈpruːv/",
+      "zh": "批准",
+      "example": "The manager must approve overtime requests."
+    },
+    {
+      "word": "approximate",
+      "ipa": "/əˈprɑːksɪmət/",
+      "zh": "大约的",
+      "example": "The approximate cost is $12,000."
+    },
+    {
+      "word": "arbitrary",
+      "ipa": "/ˈɑːrbɪtreri/",
+      "zh": "武断的",
+      "example": "Avoid arbitrary changes to the schedule."
+    },
+    {
+      "word": "assemble",
+      "ipa": "/əˈsembl/",
+      "zh": "组装；集合",
+      "example": "Workers assemble parts on Line 3."
+    },
+    {
+      "word": "assess",
+      "ipa": "/əˈses/",
+      "zh": "评估",
+      "example": "Consultants will assess our IT security."
+    },
+    {
+      "word": "asset",
+      "ipa": "/ˈæset/",
+      "zh": "资产",
+      "example": "Inventory is listed as a current asset."
+    },
+    {
+      "word": "assign",
+      "ipa": "/əˈsaɪn/",
+      "zh": "指派",
+      "example": "Please assign a lead for the project."
+    },
+    {
+      "word": "assist",
+      "ipa": "/əˈsɪst/",
+      "zh": "协助",
+      "example": "Reception can assist with visitor badges."
+    },
+    {
+      "word": "associate",
+      "ipa": "/əˈsoʊʃieɪt/",
+      "zh": "同事；关联",
+      "example": "Discuss the issue with your associate."
+    },
+    {
+      "word": "assume",
+      "ipa": "/əˈsuːm/",
+      "zh": "假定；承担",
+      "example": "Do not assume the quote includes tax."
+    },
+    {
+      "word": "assure",
+      "ipa": "/əˈʃʊr/",
+      "zh": "保证",
+      "example": "We assure clients of on-time delivery."
+    },
+    {
+      "word": "attach",
+      "ipa": "/əˈtætʃ/",
+      "zh": "附上",
+      "example": "Please attach the invoice to your email."
+    },
+    {
+      "word": "attain",
+      "ipa": "/əˈteɪn/",
+      "zh": "达到",
+      "example": "The team attained its sales target."
+    },
+    {
+      "word": "attend",
+      "ipa": "/əˈtend/",
+      "zh": "出席",
+      "example": "All staff must attend the safety briefing."
+    },
+    {
+      "word": "attribute",
+      "ipa": "/ˈætrɪbjuːt/",
+      "zh": "归因于；特质",
+      "example": "They attribute the delay to customs."
+    },
+    {
+      "word": "auction",
+      "ipa": "/ˈɔːkʃn/",
+      "zh": "拍卖",
+      "example": "Surplus equipment will be sold at auction."
+    },
+    {
+      "word": "audit",
+      "ipa": "/ˈɔːdɪt/",
+      "zh": "审计",
+      "example": "An external audit begins next Monday."
+    },
+    {
+      "word": "authorize",
+      "ipa": "/ˈɔːθəraɪz/",
+      "zh": "授权",
+      "example": "Only directors can authorize refunds over $500."
+    },
+    {
+      "word": "available",
+      "ipa": "/əˈveɪləbl/",
+      "zh": "可用的",
+      "example": "Meeting rooms are available after 3 p.m."
+    },
+    {
+      "word": "average",
+      "ipa": "/ˈævərɪdʒ/",
+      "zh": "平均",
+      "example": "The average commute is 35 minutes."
+    },
+    {
+      "word": "avoid",
+      "ipa": "/əˈvɔɪd/",
+      "zh": "避免",
+      "example": "Avoid using elevators during the drill."
+    }
+  ]
+}
