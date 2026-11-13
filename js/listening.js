@@ -9,6 +9,9 @@
   function explainListening(set, kind) {
     var html = '<h2>原文</h2>';
     if (kind === 'part1') {
+      if (!set.transcript || !set.zh || !set.credit) {
+        throw new Error('Part 1 set missing transcript, zh, or photo credit');
+      }
       html += '<div class="zh">';
       ['A','B','C','D'].forEach(function (k) {
         html += '<p><b>(' + k + ')</b> ' + ToeicQuiz.escapeHtml(set.transcript[k]) +
@@ -16,7 +19,8 @@
       });
       html += '</div><h2>译文与简析</h2><div class="item"><div class="ans">答案 · ' + set.answer + '</div>';
       html += '<p>' + ToeicQuiz.escapeHtml(set.zh.passage) + '</p>';
-      html += '<p>' + ToeicQuiz.escapeHtml(set.zh.rationale) + '</p></div>';
+      html += '<p>' + ToeicQuiz.escapeHtml(set.zh.rationale) + '</p>';
+      html += '<p class="credit">' + ToeicQuiz.escapeHtml(set.credit) + '</p></div>';
     } else if (kind === 'part2') {
       html += '<div class="zh"><p><b>Q.</b> ' + ToeicQuiz.escapeHtml(set.question) + '</p>';
       ['A','B','C'].forEach(function (k) {

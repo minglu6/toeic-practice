@@ -3,7 +3,10 @@
   "sets": [
     {
       "id": "p1-1",
-      "image": "images/part1/photo1.svg",
+      "image": "images/part1/photo1.jpg",
+      "image_w": 1600,
+      "image_h": 1067,
+      "credit": "Photo: Werner Pfennig / Pexels License · https://www.pexels.com/photo/6949972/",
       "audio": "audio/part1/set1.mp3",
       "answer": "B",
       "choices": {
@@ -19,14 +22,17 @@
         "D": "Customers are waiting in line at a café."
       },
       "zh": {
-        "passage": "图片：会议室里，一名男子站在投影屏幕旁，对面有三位同事坐着听讲。",
+        "passage": "图片：会议室里，一名男子站在讲台前发言，几位同事坐在长桌旁听讲。",
         "ans": "B",
         "rationale": "画面是室内简报场景，男子面向小组讲解。A 花园浇水、C 装货、D 咖啡馆排队均不符。"
       }
     },
     {
       "id": "p1-2",
-      "image": "images/part1/photo2.svg",
+      "image": "images/part1/photo2.jpg",
+      "image_w": 2033,
+      "image_h": 3000,
+      "credit": "Photo: Jim Pickerell / U.S. EPA, NARA NAID 556822 · Public Domain",
       "audio": "audio/part1/set2.mp3",
       "answer": "C",
       "choices": {
@@ -42,7 +48,7 @@
         "D": "Two people are shaking hands in a lobby."
       },
       "zh": {
-        "passage": "图片：走廊里一位女士站在墙面地图前，手指点着某个位置。",
+        "passage": "图片：地铁站台，一位女士站在墙面路线图前观看。",
         "ans": "C",
         "rationale": "人物在看墙上的地图。A 厨房、B 收银台、D 握手大厅均未出现。"
       }
