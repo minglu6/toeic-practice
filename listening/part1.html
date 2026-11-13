@@ -40,7 +40,12 @@
     picks = {};
     var set = data.sets[idx];
     document.getElementById('setNav').textContent = '第 ' + (idx + 1) + ' / ' + data.sets.length + ' 组';
-    document.getElementById('photo').innerHTML = '<img src="' + ToeicListening.abs(set.image) + '" alt="Part 1 photo" />';
+    if (!set.image || !set.image_w || !set.image_h) {
+      throw new Error('Part 1 set ' + set.id + ' missing image or dimensions');
+    }
+    document.getElementById('photo').innerHTML =
+      '<img src="' + ToeicListening.abs(set.image) + '" alt="Part 1 photograph" width="' +
+      set.image_w + '" height="' + set.image_h + '" />';
     document.getElementById('audio').src = ToeicListening.abs(set.audio);
     qs.innerHTML = '<div class="q" data-q="' + set.id + '" data-ans="' + set.answer + '">' +
       '<div class="stem">选择与图片相符的描述</div>' +

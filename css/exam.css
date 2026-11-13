@@ -128,9 +128,33 @@ body.exam {
 }
 .audio-bar audio { width: 100%; margin-top: 6px; }
 .photo-wrap {
-  border: 1px solid #000; padding: 8px; margin-bottom: 12px; background: #fff; text-align: center;
+  border: 1px solid #000;
+  padding: 8px;
+  margin-bottom: 12px;
+  background: #f3f3f3;
+  text-align: center;
+  min-height: 220px;
+  box-sizing: border-box;
 }
-.photo-wrap svg, .photo-wrap img { max-width: 100%; height: auto; }
+.photo-wrap img {
+  display: block;
+  box-sizing: border-box;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  min-height: 200px;
+  max-height: min(70vh, 520px);
+  margin: 0 auto;
+  object-fit: contain;
+  background: #e8e8e8;
+  vertical-align: middle;
+}
+.explain .credit {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #444;
+  margin: 8px 0 0;
+}
 .set-nav { font-size: 12px; margin: 0 0 10px; color: #333; }
 .blank { display: inline-block; min-width: 2.2em; border-bottom: 1px solid #000; text-align: center; font-weight: 700; }
 .vocab-card {

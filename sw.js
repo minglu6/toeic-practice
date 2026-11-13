@@ -1,5 +1,5 @@
 /* 托业考试练习 · offline shell */
-const CACHE = 'toeic-practice-v1';
+const CACHE = 'toeic-practice-v2';
 const SHELL = [
   './',
   './index.html',
@@ -23,6 +23,8 @@ const SHELL = [
   './basics/grammar.html',
   './basics/wrongbook.html',
   './data/part1.json',
+  './images/part1/photo1.jpg',
+  './images/part1/photo2.jpg',
   './data/part2.json',
   './data/part3.json',
   './data/part4.json',
